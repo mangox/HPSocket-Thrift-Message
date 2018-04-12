@@ -1,5 +1,4 @@
 # HPSocket-Thrift-Message
-C/S Framework based on HPSocket and Thrift.
 这是一个基于[HPSocket](https://github.com/ldcsaa/HP-Socket)和[Thrift](http://thrift.apache.org/)开发的C/S架构的演示程序。
 
 - 编写语言:C#
