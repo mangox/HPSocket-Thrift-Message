@@ -1,0 +1,4 @@
+bin/Release/*.config
+bin/Debug/*.config
+bin/Release/*.pdb
+bin/Debug/*.pdb

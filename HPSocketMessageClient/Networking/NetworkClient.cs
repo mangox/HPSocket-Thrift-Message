@@ -209,7 +209,6 @@ namespace Networking
         {
             if (Status == ClientStatus.Stopped)
             {
-                Console.WriteLine("client已经断开连接，无法发送");
                 return;
             }
             

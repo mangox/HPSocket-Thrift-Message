@@ -26,14 +26,14 @@ namespace Networking
         {
             Thread HandleThread = new Thread(new ThreadStart(HandlingThreadFunc)) { IsBackground = true, Name = "Thread# Handling Thread", Priority = ThreadPriority.AboveNormal };
             Thread RequestThread = new Thread(new ThreadStart(RequestTaskFunc)) { IsBackground = true, Name = "Thread# Request Task" };
-            HandleThread.Start();
+            RequestThread.Start();
             DictThreads.Add("RequestThread", RequestThread);
             DictThreads.Add("HandleThread", HandleThread);
 
             if (this.client.Connect(IPAddress, Port))
             {
                 Console.WriteLine("初次连接成功!");
-                DictThreads["RequestThread"].Start();
+                HandleThread.Start();
             }
         }
 
