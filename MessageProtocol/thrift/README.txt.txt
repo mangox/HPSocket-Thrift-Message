@@ -1,0 +1,1 @@
+thrift-0.10.0.exe -gen csharp Protocol.thrift
